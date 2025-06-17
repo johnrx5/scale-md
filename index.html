@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScaleMD® | Your Partner for Compliant Telehealth Staffing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(240, 249, 255, 1) 0%, rgba(224, 242, 254, 1) 100%);
+        }
+        .brand-text {
+            color: #0d9488; /* Teal-600 */
+        }
+        /* Style for the active nav link */
+        .nav-link.active {
+            color: #0d9488; /* brand-text color */
+            font-weight: 600;
+        }
+        /* Smooth transition for page content */
+        .page-content {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="nav-link text-2xl font-bold brand-text" data-page="home">
+                ScaleMD®
+            </a>
+            <nav id="desktop-nav" class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-gray-600 hover:text-teal-600 transition-colors" data-page="home">Home</a>
+                <a href="#services" class="nav-link text-gray-600 hover:text-teal-600 transition-colors" data-page="services">Services</a>
+                <a href="#how-it-works" class="nav-link text-gray-600 hover:text-teal-600 transition-colors" data-page="how-it-works">How It Works</a>
+                <a href="#why-us" class="nav-link text-gray-600 hover:text-teal-600 transition-colors" data-page="why-us">Why Us</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-teal-600 transition-colors" data-page="contact">Contact</a>
+            </nav>
+            <a href="#contact" class="nav-link hidden md:block bg-teal-600 text-white font-medium px-5 py-2.5 rounded-lg hover:bg-teal-700 transition-all shadow-sm" data-page="contact">
+                Get Started
+            </a>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 border-t border-gray-200">
+            <a href="#home" class="nav-link block py-2 text-gray-600 hover:text-teal-600" data-page="home">Home</a>
+            <a href="#services" class="nav-link block py-2 text-gray-600 hover:text-teal-600" data-page="services">Services</a>
+            <a href="#how-it-works" class="nav-link block py-2 text-gray-600 hover:text-teal-600" data-page="how-it-works">How It Works</a>
+            <a href="#why-us" class="nav-link block py-2 text-gray-600 hover:text-teal-600" data-page="why-us">Why Us</a>
+            <a href="#contact" class="nav-link block py-2 text-gray-600 hover:text-teal-600" data-page="contact">Contact</a>
+            <a href="#contact" class="nav-link block mt-4 w-full text-center bg-teal-600 text-white font-medium px-5 py-2.5 rounded-lg hover:bg-teal-700 transition-all" data-page="contact">
+                Get Started
+            </a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Page: Home -->
+        <div id="page-home" class="page-content">
+            <!-- Hero Section -->
+            <section class="hero-gradient pt-12 pb-20 md:pt-20 md:pb-28">
+                <div class="container mx-auto px-6 text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">
+                        Effortless, Compliant Telehealth Staffing
+                    </h1>
+                    <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                        ScaleMD® connects telehealth innovators with our nationwide, physician-only network of multi-state licensed doctors. Scale with confidence, knowing every consultation is high-quality and fully compliant.
+                    </p>
+                    <div class="mt-10 flex justify-center items-center flex-wrap gap-4">
+                        <a href="#contact" class="nav-link bg-teal-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-teal-700 transition-transform hover:scale-105 shadow-lg" data-page="contact">
+                            Request a Consultation
+                        </a>
+                        <a href="#services" class="nav-link bg-white text-teal-600 font-bold py-3 px-8 rounded-lg text-lg hover:bg-gray-100 transition-transform hover:scale-105 shadow-lg border border-gray-200" data-page="services">
+                            Explore Our Services
+                        </a>
+                    </div>
+                </div>
+            </section>
+             <!-- Mini-Services Section for Home Page -->
+            <section class="py-20 bg-white">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800">The Clinical Network Built for Modern Telehealth</h2>
+                        <p class="mt-4 text-lg text-gray-600">We provide the scalable clinical infrastructure you need to succeed.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Feature 1 -->
+                        <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 transition-all hover:shadow-lg hover:-translate-y-1">
+                             <div class="bg-teal-100 text-teal-600 rounded-full h-12 w-12 flex items-center justify-center mb-5">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9V3"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">50-State Coverage</h3>
+                            <p class="text-gray-600">Instantly access a network of physicians licensed to practice in all 50 states, DC, and Guam.</p>
+                        </div>
+                        <!-- Feature 2 -->
+                        <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 transition-all hover:shadow-lg hover:-translate-y-1">
+                            <div class="bg-teal-100 text-teal-600 rounded-full h-12 w-12 flex items-center justify-center mb-5">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">24/7/365 Availability</h3>
+                            <p class="text-gray-600">Our physicians provide around-the-clock coverage to meet your SLAs and patient needs.</p>
+                        </div>
+                        <!-- Feature 3 -->
+                        <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 transition-all hover:shadow-lg hover:-translate-y-1">
+                             <div class="bg-teal-100 text-teal-600 rounded-full h-12 w-12 flex items-center justify-center mb-5">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-5.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-5.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222 4 2.222V20M12 14L8 12m4 2l4-2"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">Board-Certified Specialists</h3>
+                            <p class="text-gray-600">Our robust network consists of vetted, board-certified physicians across a wide range of specialties.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Page: Services -->
+        <div id="page-services" class="page-content hidden">
+            <section class="py-20 bg-white">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16">
+                         <h1 class="text-4xl md:text-5xl font-bold text-gray-800">Our Clinical Staffing Solutions</h1>
+                         <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Flexible, compliant, and high-quality physician networks designed to integrate seamlessly with your telehealth platform.</p>
+                    </div>
+                    <div class="space-y-16">
+                        <!-- Service 1: Asynchronous Telehealth -->
+                        <div class="flex flex-col md:flex-row items-center gap-12">
+                            <div class="md:w-1/2">
+                                <img src="https://placehold.co/600x400/e0f2f1/0d9488?text=Asynchronous+Care" alt="Illustration of store-and-forward telehealth" class="rounded-xl shadow-xl">
+                            </div>
+                            <div class="md:w-1/2">
+                                <h2 class="text-3xl font-bold text-gray-800 mb-4">Asynchronous (Store-and-Forward) Telehealth</h2>
+                                <p class="text-gray-600 mb-4">Perfect for direct-to-consumer (DTC) brands, our asynchronous solution allows patients to submit their information on their own time. Our physicians review and respond promptly, typically in under an hour, ensuring a convenient and efficient patient experience without the need for a live appointment.</p>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 text-teal-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Rapid, sub-hour response times to meet patient expectations.</span></li>
+                                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 text-teal-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Ideal for prescription refills, simple consultations, and follow-ups.</span></li>
+                                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 text-teal-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Reduces operational costs and increases physician efficiency.</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Service 2: Synchronous Telehealth -->
+                        <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                            <div class="md:w-1/2">
+                                <img src="https://placehold.co/600x400/e0f2f1/0d9488?text=Synchronous+Care" alt="Illustration of live video telehealth" class="rounded-xl shadow-xl">
+                            </div>
+                            <div class="md:w-1/2">
+                                <h2 class="text-3xl font-bold text-gray-800 mb-4">Synchronous (Live Video) Telehealth</h2>
+                                <p class="text-gray-600 mb-4">For services requiring real-time interaction, our network provides on-demand or scheduled video consultations. We staff your platform with board-certified physicians ready to deliver high-quality, personable care for urgent needs, initial diagnoses, and in-depth consultations.</p>
+                                 <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 text-teal-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>24/7/365 coverage for urgent care and immediate patient needs.</span></li>
+                                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 text-teal-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Specialist access for mental health, dermatology, and more.</span></li>
+                                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 text-teal-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Improves diagnostic accuracy and patient trust through face-to-face interaction.</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Page: How It Works -->
+        <div id="page-how-it-works" class="page-content hidden">
+            <section class="py-20 hero-gradient">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16">
+                        <h1 class="text-4xl md:text-5xl font-bold text-gray-800">Our Partnership Process</h1>
+                        <p class="mt-4 text-lg text-gray-600">A streamlined, transparent process to launch and scale your clinical team.</p>
+                    </div>
+                    <div class="relative max-w-4xl mx-auto">
+                        <!-- The vertical line -->
+                        <div class="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-teal-300 hidden md:block"></div>
+
+                        <!-- Step 1 -->
+                        <div class="relative md:flex md:items-center md:gap-8 mb-12">
+                            <div class="md:w-1/2 md:text-right md:pr-8">
+                                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                                    <h3 class="text-2xl font-bold text-teal-600 mb-2">Step 1: Discovery & Consultation</h3>
+                                    <p class="text-gray-600">It begins with a conversation. We work closely with you to understand your clinical protocols, patient demographics, state coverage requirements, and desired service level agreements (SLAs). This ensures we build a solution perfectly tailored to your business model.</p>
+                                </div>
+                            </div>
+                            <div class="absolute left-1/2 -translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-teal-500 flex items-center justify-center font-bold text-teal-600 z-10 hidden md:flex">1</div>
+                            <div class="md:w-1/2"></div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="relative md:flex md:items-center md:gap-8 mb-12">
+                            <div class="md:w-1/2"></div>
+                             <div class="absolute left-1/2 -translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-teal-500 flex items-center justify-center font-bold text-teal-600 z-10 hidden md:flex">2</div>
+                            <div class="md:w-1/2 md:pl-8">
+                                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                                    <h3 class="text-2xl font-bold text-teal-600 mb-2">Step 2: Physician Matching & Credentialing</h3>
+                                    <p class="text-gray-600">Using your specific criteria, our proprietary algorithm identifies the ideal physicians from our nationwide network. We then handle the entire credentialing process, verifying licenses, board certifications, and backgrounds to ensure compliance and quality before presenting you with a curated team for approval.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="relative md:flex md:items-center md:gap-8 mb-12">
+                            <div class="md:w-1/2 md:text-right md:pr-8">
+                                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                                    <h3 class="text-2xl font-bold text-teal-600 mb-2">Step 3: Technical Onboarding & Training</h3>
+                                    <p class="text-gray-600">We ensure your new clinical team is ready to go on day one. Our team manages the technical onboarding onto your EMR and telehealth platform, providing comprehensive training on your specific workflows, brand voice, and clinical guidelines to ensure a seamless patient experience.</p>
+                                </div>
+                            </div>
+                            <div class="absolute left-1/2 -translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-teal-500 flex items-center justify-center font-bold text-teal-600 z-10 hidden md:flex">3</div>
+                            <div class="md:w-1/2"></div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="relative md:flex md:items-center md:gap-8">
+                             <div class="md:w-1/2"></div>
+                             <div class="absolute left-1/2 -translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-teal-500 flex items-center justify-center font-bold text-teal-600 z-10 hidden md:flex">4</div>
+                            <div class="md:w-1/2 md:pl-8">
+                                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                                    <h3 class="text-2xl font-bold text-teal-600 mb-2">Step 4: Launch, Monitor & Scale</h3>
+                                    <p class="text-gray-600">Go live with confidence. We continuously monitor performance, response times, and quality metrics, providing you with transparent reports. As your patient volume grows, we dynamically adjust your physician staffing to meet demand, ensuring you can scale without compromising quality or compliance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Page: Why Us -->
+        <div id="page-why-us" class="page-content hidden">
+            <section class="py-20 bg-white">
+                <div class="container mx-auto px-6">
+                    <div class="lg:flex lg:items-center lg:gap-16">
+                        <div class="lg:w-1/2">
+                            <h1 class="text-4xl md:text-5xl font-bold text-gray-800">A True Partner in Telehealth Innovation</h1>
+                            <p class="mt-6 text-lg text-gray-600">ScaleMD® was founded by healthcare professionals and technologists who saw a critical gap in the telehealth ecosystem: the need for a reliable, high-quality, and scalable clinical workforce.</p>
+                            <p class="mt-4 text-gray-600">We are not a temp agency; we are your strategic clinical partner. Our mission is to empower telehealth companies to deliver exceptional patient care by removing the complexities of physician recruitment, licensing, credentialing, and management. We believe that by providing the best doctors—trained in the nuances of "webside manner"—we can help you build the future of healthcare.</p>
+                            <div class="mt-8">
+                                <a href="#contact" class="nav-link inline-block bg-teal-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-teal-700 transition-all shadow-md" data-page="contact">Become a Partner</a>
+                            </div>
+                        </div>
+                        <div class="mt-10 lg:mt-0 lg:w-1/2">
+                            <img src="https://placehold.co/600x500/0d9488/ffffff?text=Our+Mission" alt="Diverse group of healthcare professionals collaborating" class="rounded-xl shadow-2xl">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Page: Contact -->
+        <div id="page-contact" class="page-content hidden">
+            <section class="py-20 hero-gradient">
+                <div class="container mx-auto px-6">
+                    <div class="max-w-4xl mx-auto lg:flex bg-white rounded-xl shadow-2xl overflow-hidden">
+                        <div class="lg:w-1/2 p-8 md:p-12">
+                            <h1 class="text-3xl font-bold text-gray-800">Ready to Scale Your Services?</h1>
+                            <p class="mt-4 text-gray-600">Tell us about your telehealth goals. Our team will prepare a customized proposal outlining how ScaleMD® can provide the physician network you need to succeed.
+                            </p>
+                            <form action="#" method="POST" class="mt-8 space-y-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="first-name" class="block text-sm font-medium text-gray-700">First Name</label>
+                                        <input type="text" name="first-name" id="first-name" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500" required>
+                                    </div>
+                                    <div>
+                                        <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
+                                        <input type="text" name="last-name" id="last-name" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500" required>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700">Work Email</label>
+                                    <input type="email" name="email" id="email" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500" required>
+                                </div>
+                                <div>
+                                    <label for="company" class="block text-sm font-medium text-gray-700">Company Name</label>
+                                    <input type="text" name="company" id="company" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500">
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-700">How can we help?</label>
+                                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500" placeholder="Tell us about your patient volume, state needs, and specialties."></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" class="w-full bg-teal-600 text-white font-bold py-3 px-6 rounded-lg text-lg hover:bg-teal-700 transition-all shadow-md">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="lg:w-1/2 bg-teal-700 p-8 md:p-12 text-white flex flex-col justify-center">
+                             <h3 class="text-2xl font-bold">Your Partner in Quality Care</h3>
+                            <p class="mt-4">
+                            "ScaleMD® has been instrumental in our expansion. Their physician network is not only extensive but also incredibly high-quality. The onboarding was seamless, and their team is always responsive."
+                            </p>
+                            <div class="mt-6">
+                                <p class="font-bold">Sarah Johnson</p>
+                                <p class="text-teal-200">COO, Digital Health Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                     <a href="#home" class="nav-link text-3xl font-bold text-white" data-page="home">
+                        ScaleMD®
+                    </a>
+                    <p class="mt-2 text-gray-400">Revolutionizing Telehealth Staffing.</p>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-8">
+                    <div>
+                        <h2 class="mb-4 text-sm font-semibold text-gray-200 uppercase tracking-wider">Solutions</h2>
+                        <ul class="text-gray-400 space-y-2">
+                            <li><a href="#services" class="nav-link hover:text-white" data-page="services">Nationwide Coverage</a></li>
+                            <li><a href="#services" class="nav-link hover:text-white" data-page="services">Asynchronous Care</a></li>
+                            <li><a href="#services" class="nav-link hover:text-white" data-page="services">Synchronous Care</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-4 text-sm font-semibold text-gray-200 uppercase tracking-wider">Company</h2>
+                        <ul class="text-gray-400 space-y-2">
+                            <li><a href="#why-us" class="nav-link hover:text-white" data-page="why-us">About Us</a></li>
+                            <li><a href="#" class="hover:text-white">Careers</a></li>
+                            <li><a href="#contact" class="nav-link hover:text-white" data-page="contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-4 text-sm font-semibold text-gray-200 uppercase tracking-wider">Legal</h2>
+                        <ul class="text-gray-400 space-y-2">
+                            <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-8 border-gray-700">
+            <div class="text-center text-gray-500">
+                &copy; <span id="current-year"></span> Scale-MD.com. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Page Navigation Logic ---
+            const pages = document.querySelectorAll('.page-content');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+
+            const showPage = (pageId) => {
+                // Default to home page if no ID is provided or it's invalid
+                const targetPage = document.getElementById(`page-${pageId}`) ? `page-${pageId}` : 'page-home';
+                
+                // Hide all pages
+                pages.forEach(page => {
+                    page.classList.add('hidden');
+                });
+
+                // Show the target page
+                const activePage = document.getElementById(targetPage);
+                if (activePage) {
+                    activePage.classList.remove('hidden');
+                }
+
+                // Update active state on nav links
+                navLinks.forEach(link => {
+                    if (link.dataset.page === pageId) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
+
+                // Update URL hash
+                window.location.hash = pageId;
+
+                // Scroll to top of page
+                window.scrollTo(0, 0);
+
+                 // Close mobile menu if it's open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            };
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const pageId = link.dataset.page;
+                    showPage(pageId);
+                });
+            });
+
+            // --- Mobile Menu Toggle ---
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // --- Handle Initial Page Load and Back/Forward Buttons ---
+            const handleUrlChange = () => {
+                const hash = window.location.hash.substring(1);
+                showPage(hash || 'home'); // Default to 'home' if no hash
+            };
+
+            // Listen for hash changes (back/forward buttons)
+            window.addEventListener('popstate', handleUrlChange);
+
+            // Initial load
+            handleUrlChange();
+
+            // --- Footer: Set current year ---
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        });
+    </script>
+
+</body>
+</html>
